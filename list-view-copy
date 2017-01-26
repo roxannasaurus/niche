@@ -1,0 +1,53 @@
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+$(document).ready(function () {
+    "use strict";
+    var options = [['Education', 'KHP', 'Orange Juice'], ['Cafe', 'ExcerciseLads']];
+    function makeUL(array) {
+    // Create the list element:
+        var list = document.createElement('ul'), i, item;
+        for (i = 0; i < array.length; i += 1) {
+            // Create the list item:
+            item = document.createElement('li');
+            // Set its contents:
+            item.appendChild(document.createTextNode(array[i]));
+            // Add it to the list:
+            list.appendChild(item);
+        }
+        // Finally, return the constructed list:
+        return list;
+    }
+    (function () {
+        function clickListener(arrow) {
+            arrow.addEventListener("click", function () {
+                var c = this.classList;
+                if (c.contains("flipped") === true) {
+                    c.remove("flipped");
+                    if (arrow.id === "major-arrow") {
+                        document.getElementById("major-list").innerHTML = "";
+                    }
+                    if (arrow.id === "llp-arrow") {
+                        document.getElementById("llp-list").innerHTML = "";
+                    }
+
+                } else {
+                    c.add("flipped");
+                    if (arrow.id === "major-arrow") {
+                        document.getElementById('major-list').appendChild(makeUL(options[0]));
+                    }
+                    if (arrow.id === "llp-arrow") {
+                        document.getElementById('llp-list').appendChild(makeUL(options[1]));
+                    }
+
+                }
+            });
+        }
+        var arrows = document.querySelectorAll(".list-view-arrow.effect__click"), i, arrow, len;
+        for (i = 0, len = arrows.length; i < len; i += 1) {
+            arrow = arrows[i];
+            clickListener(arrow);
+        }
+
+    }());
+});
+     

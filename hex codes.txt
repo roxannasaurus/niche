@@ -1,0 +1,31 @@
+niche hex codes:
+
+NEUTRALS
+header white: #ffffff
+dark slate grey font: #2c3d4f
+background silver: #bcc2c6
+highlight white smoke: #ebeff0
+
+bg purple: #9b59b4
+bg dark purple: #8e44ac
+
+bg lime green: #2bca72
+bg dark lime green: #24ad61
+
+bg tomato: #e74b3c
+bg dark tomato: #bf382b 
+
+bg turquoise: #16bb9b
+bg dark turquoise: #149f84
+
+bg blue: #3597d9
+bg dark blue: #2a7fb8
+
+bg carrot: #e57d24
+bg dark carrot: #d25304
+
+bg light blue:  #9ad6ff
+
+bg pink: #ecc0d8
+
+

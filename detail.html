@@ -1,0 +1,137 @@
+<html>
+<head>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<script src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="detail.js"></script>
+
+	<title>detail</title>
+</head>
+
+<body>
+	<div class="detail-body" id="bg">
+		<div class="top-bar">
+			<a href="/list-view.html">
+			<div class="top-bar-logo"><img src=
+			"graphics/header-logo.svg"></div></a> <a href="/about.html">
+			<div class="top-bar-element">
+				about
+			</div></a>
+		</div>
+
+		<div class="detail-content">
+			<a href="list-view.html">
+			<div class="back-block">
+				<span class="icon-back"></span>
+			</div></a>
+                
+			<div class="detail-title" id="title"></div>
+			<div class="detail-subtitle" id="subtitle"></div>
+			<div class="detail-description-tabs" id="description-tabs">
+				<ul class="detail-tabs">
+					<li>
+						<input checked id="tab1" name="tabs" type="radio">
+						<label for="tab1">where</label>
+
+						<div class="detail-tab-content animated fadeIn" id=
+						"tab-content1"></div>
+					</li>
+
+					<li>
+						<input checked id="tab2" name="tabs" type="radio">
+						<label for="tab2">what</label>
+
+						<div class="detail-tab-content animated fadeIn" id=
+						"tab-content2"></div>
+					</li>
+
+					<li>
+						<input checked id="tab3" name="tabs" type="radio">
+						<label for="tab3">why</label>
+
+						<div class="detail-tab-content animated fadeIn" id=
+						"tab-content3"></div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="detail-description-box" id="description-box">
+				<div class="detail-top-line">
+					<div class="detail-ages" id="ages"></div>
+
+					<div class="detail-certified" id="certified">
+                        <span class="icon-ribbon"></span>
+                    </div>
+				</div>
+
+				<div class="detail-description" id="description"></div>
+			</div><a href='' id="pdf-link">
+			<div class="detail-pdf-block" id="pdf">
+                <span class="icon-pdf"></span>
+            </div>
+            </a> 
+            
+            
+            <div class="detail-scholarship-block" id="scholarship-block">
+                <div class="detail-scholarship-detail">
+                <div class ="detail-scholarship-detail-block"> 
+                    <div class = "detail-scholarship-icon">
+                        <span class="icon-open"></span>
+                    </div>
+                    <div class = "detail-scholarship-text" id="open-text"></div>
+                </div>
+                <div class ="detail-scholarship-detail-block">
+                    <div class = "detail-scholarship-icon">
+                        <span class="icon-close"></span>
+                    </div>
+                     <div class = "detail-scholarship-text" id="close-text"></div>
+                </div>
+                </div>
+                
+                <a href='' id="apply-link">
+			         <div class="detail-scholarship-apply-block" id="apply">
+                        <span class="icon-apply"></span>
+                    </div>
+                </a>
+                <a href='' id="more-link">
+			         <div class="detail-scholarship-more-block" id="more">
+                            <span class="icon-more"></span>
+                    </div>
+                </a>
+            </div>
+            
+            
+            
+            <label class=
+			"check-box" for="modal-1"></label>
+
+			<div class="email-block">
+				<label class="check-box" for="modal-1"><span class=
+				"icon-add"></span></label>
+			</div><label class="check-box" for="modal-1"></label> <input class=
+			"modal-state" id="modal-1" type="checkbox">
+
+			<div class="modal">
+				<label class="modal-bg" for="modal-1"></label>
+
+				<div class="modal-inner">
+					<div class="cancel-block">
+						<label class="modal-close" for="modal-1"></label>
+						<span class="icon-cancel"></span>
+					</div>
+
+					<div class="success-message">
+						successfully added!
+					</div><a href="/list-view.html">
+					<div class="success-back-block">
+						<span class="icon-back"></span>
+					</div></a> <a href="/login.html">
+					<div class="success-email-block">
+						<span class="icon-email"></span>
+					</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

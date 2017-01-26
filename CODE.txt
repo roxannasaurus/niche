@@ -1,0 +1,60 @@
+<div class="bg" id="bg">
+    <div class="title" id="title"></div>
+    <div class="subtitle" id="subtitle"></div>
+    <div class="description-box" id="description-box">
+        <div class="top-line">
+            <div class="ages" id="ages"></div>
+            <div class="certified" id="certified"></div>
+        </div>
+        <div class="description" id="description"></div>
+    </div>
+    <a href='' id = "pdf-link">
+        <div class="pdf-block"></div>
+    </a>
+</div>
+
+
+var type = 'm';
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function major_style(title, subtitle, description, ages, certified, pdf, bg_codes) {
+    var index = getRandomInt(0, bg_codes.length - 1);
+    document.getElementById("bg").style.backgroundColor = bg_codes[index];
+    document.getElementById("title").innerHTML = title;
+    document.getElementById("subtitle").innerHTML = subtitle;
+    document.getElementById("description").innerHTML = description;
+    document.getElementById("ages").innerHTML = ages;
+    if (certified === true) {
+        document.getElementById("certified").innerHTML = "@";
+
+document.getElementById("pdf-link").setAttribute('href','pdf');
+    }
+}
+
+window.onload = function () {
+    if(type === 'm') {
+   major_style(major_title, major_subtitle, major_description, major_ages, major_certified, major_pdf, major_bg_codes);
+    }
+    else if(type === 'l'){
+    }
+    else if(type === 's'){
+    }
+    else if(type === 'p'){
+    }
+    else {
+    	window.alert('Someone jacked up the type controls. Lolsies');
+    }
+};
+
+
+var major_title = "IECE";
+var major_subtitle = "interdisciplinary early childhood education";
+var major_description = "The Interdisciplinary Early Childhood Education (IECE) Program prepares students for a variety of careers working with families and young children, birth through five years, including those with disabilities. Graduates of the IECE program are prepared for a variety of teaching, research, and administration careers in settings such as preschool, kindergarten, early intervention (First Steps), childcare, research programs, state and local government agencies, hospitals as child and family life specialists, and other private or publicly-funded programs, such as Head Start, Early Start, and Kentucky’s HANDS ProgramThe Interdisciplinary Early Childhood Education (IECE) Program prepares students for a variety of careers working with families and young children, birth through five years, including those with disabilities. Graduates of the IECE program are prepared for a variety of teaching, research, and administration careers in settings such as preschool, kindergarten, early intervention (First Steps), childcare, research programs, state and local government agencies, hospitals as child and family life specialists, and other private or publicly-funded programs, such as Head Start, Early Start, and Kentucky’s HANDS Program";
+var major_pdf = "http://www.neopets.com";
+var major_bg_codes = ['#9b59b4', '#e74b3c', '#3597d9', '#16bb9b', '#e57d24'];
+var major_ages = "birth-primary";
+var major_certified = true;
+
